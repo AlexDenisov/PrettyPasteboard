@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		461B69B2193B932C00FECA0D /* PPPasteboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */; };
+		461B69B6193BA63A00FECA0D /* PPPasteboardJSONHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */; };
+		46B673AD193A0770009D136E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B673AC193A0770009D136E /* Cocoa.framework */; };
+		46B673B7193A0770009D136E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B673B5193A0770009D136E /* InfoPlist.strings */; };
+		46B673B9193A0770009D136E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B673B8193A0770009D136E /* main.m */; };
+		46B673BD193A0770009D136E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 46B673BB193A0770009D136E /* Credits.rtf */; };
+		46B673C0193A0770009D136E /* PPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B673BF193A0770009D136E /* PPAppDelegate.m */; };
+		46B673C3193A0770009D136E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B673C1193A0770009D136E /* MainMenu.xib */; };
+		46B673C5193A0770009D136E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B673C4193A0770009D136E /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		461B69B0193B932C00FECA0D /* PPPasteboardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasteboardObserver.h; sourceTree = "<group>"; };
+		461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasteboardObserver.m; sourceTree = "<group>"; };
+		461B69B3193BA50900FECA0D /* PPPasteboardObserverSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPasteboardObserverSubscriber.h; sourceTree = "<group>"; };
+		461B69B4193BA63A00FECA0D /* PPPasteboardJSONHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasteboardJSONHandler.h; sourceTree = "<group>"; };
+		461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasteboardJSONHandler.m; sourceTree = "<group>"; };
+		46B673A9193A0770009D136E /* PrettyPasteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPasteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B673AC193A0770009D136E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		46B673AF193A0770009D136E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		46B673B0193A0770009D136E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		46B673B1193A0770009D136E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		46B673B4193A0770009D136E /* PrettyPasteboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrettyPasteboard-Info.plist"; sourceTree = "<group>"; };
+		46B673B6193A0770009D136E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		46B673B8193A0770009D136E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46B673BA193A0770009D136E /* PrettyPasteboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrettyPasteboard-Prefix.pch"; sourceTree = "<group>"; };
+		46B673BC193A0770009D136E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		46B673BE193A0770009D136E /* PPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAppDelegate.h; sourceTree = "<group>"; };
+		46B673BF193A0770009D136E /* PPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAppDelegate.m; sourceTree = "<group>"; };
+		46B673C2193A0770009D136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		46B673C4193A0770009D136E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46B673CB193A0770009D136E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46B673A6193A0770009D136E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B673AD193A0770009D136E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46B673A0193A0770009D136E = {
+			isa = PBXGroup;
+			children = (
+				46B673B2193A0770009D136E /* PrettyPasteboard */,
+				46B673AB193A0770009D136E /* Frameworks */,
+				46B673AA193A0770009D136E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46B673AA193A0770009D136E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46B673A9193A0770009D136E /* PrettyPasteboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46B673AB193A0770009D136E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46B673AC193A0770009D136E /* Cocoa.framework */,
+				46B673CB193A0770009D136E /* XCTest.framework */,
+				46B673AE193A0770009D136E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46B673AE193A0770009D136E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46B673AF193A0770009D136E /* AppKit.framework */,
+				46B673B0193A0770009D136E /* CoreData.framework */,
+				46B673B1193A0770009D136E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		46B673B2193A0770009D136E /* PrettyPasteboard */ = {
+			isa = PBXGroup;
+			children = (
+				46B673BE193A0770009D136E /* PPAppDelegate.h */,
+				46B673BF193A0770009D136E /* PPAppDelegate.m */,
+				46B673C1193A0770009D136E /* MainMenu.xib */,
+				46B673C4193A0770009D136E /* Images.xcassets */,
+				46B673B3193A0770009D136E /* Supporting Files */,
+				461B69B3193BA50900FECA0D /* PPPasteboardObserverSubscriber.h */,
+				461B69B0193B932C00FECA0D /* PPPasteboardObserver.h */,
+				461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */,
+				461B69B4193BA63A00FECA0D /* PPPasteboardJSONHandler.h */,
+				461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */,
+			);
+			path = PrettyPasteboard;
+			sourceTree = "<group>";
+		};
+		46B673B3193A0770009D136E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46B673B4193A0770009D136E /* PrettyPasteboard-Info.plist */,
+				46B673B5193A0770009D136E /* InfoPlist.strings */,
+				46B673B8193A0770009D136E /* main.m */,
+				46B673BA193A0770009D136E /* PrettyPasteboard-Prefix.pch */,
+				46B673BB193A0770009D136E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46B673A8193A0770009D136E /* PrettyPasteboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B673DA193A0770009D136E /* Build configuration list for PBXNativeTarget "PrettyPasteboard" */;
+			buildPhases = (
+				46B673A5193A0770009D136E /* Sources */,
+				46B673A6193A0770009D136E /* Frameworks */,
+				46B673A7193A0770009D136E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrettyPasteboard;
+			productName = PrettyPasteboard;
+			productReference = 46B673A9193A0770009D136E /* PrettyPasteboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46B673A1193A0770009D136E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Railsware;
+			};
+			buildConfigurationList = 46B673A4193A0770009D136E /* Build configuration list for PBXProject "PrettyPasteboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46B673A0193A0770009D136E;
+			productRefGroup = 46B673AA193A0770009D136E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46B673A8193A0770009D136E /* PrettyPasteboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46B673A7193A0770009D136E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B673B7193A0770009D136E /* InfoPlist.strings in Resources */,
+				46B673C5193A0770009D136E /* Images.xcassets in Resources */,
+				46B673BD193A0770009D136E /* Credits.rtf in Resources */,
+				46B673C3193A0770009D136E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46B673A5193A0770009D136E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B673C0193A0770009D136E /* PPAppDelegate.m in Sources */,
+				461B69B6193BA63A00FECA0D /* PPPasteboardJSONHandler.m in Sources */,
+				461B69B2193B932C00FECA0D /* PPPasteboardObserver.m in Sources */,
+				46B673B9193A0770009D136E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46B673B5193A0770009D136E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B673B6193A0770009D136E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		46B673BB193A0770009D136E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B673BC193A0770009D136E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		46B673C1193A0770009D136E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B673C2193A0770009D136E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46B673D8193A0770009D136E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		46B673D9193A0770009D136E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		46B673DB193A0770009D136E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PrettyPasteboard/PrettyPasteboard-Prefix.pch";
+				INFOPLIST_FILE = "PrettyPasteboard/PrettyPasteboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		46B673DC193A0770009D136E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PrettyPasteboard/PrettyPasteboard-Prefix.pch";
+				INFOPLIST_FILE = "PrettyPasteboard/PrettyPasteboard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46B673A4193A0770009D136E /* Build configuration list for PBXProject "PrettyPasteboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B673D8193A0770009D136E /* Debug */,
+				46B673D9193A0770009D136E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46B673DA193A0770009D136E /* Build configuration list for PBXNativeTarget "PrettyPasteboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B673DB193A0770009D136E /* Debug */,
+				46B673DC193A0770009D136E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46B673A1193A0770009D136E /* Project object */;
+}
