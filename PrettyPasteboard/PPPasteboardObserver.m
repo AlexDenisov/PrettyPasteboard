@@ -15,7 +15,8 @@ typedef
 NS_ENUM(unsigned char, PPPasteboardObserverState)
 {
     PPPasteboardObserverStateDisabled,
-    PPPasteboardObserverStateEnabled
+    PPPasteboardObserverStateEnabled,
+    PPPasteboardObserverStatePaused
 };
 
 @implementation PPPasteboardObserver
@@ -58,6 +59,19 @@ NS_ENUM(unsigned char, PPPasteboardObserverState)
     [self changeState:PPPasteboardObserverStateDisabled];
 }
 
+- (void)pauseObserving
+{
+    [self changeState:PPPasteboardObserverStatePaused];
+}
+
+- (void)continueObserving
+{
+    if (_state == PPPasteboardObserverStatePaused) {
+        _changeCount = self.pasteboard.changeCount;
+        _state = PPPasteboardObserverStateEnabled;
+    }
+}
+
 - (void)changeState:(PPPasteboardObserverState)state
 {
     dispatch_sync(_serialQueue, ^{
@@ -73,11 +87,14 @@ NS_ENUM(unsigned char, PPPasteboardObserverState)
 - (void)observerLoop
 {
     while ([self isEnabled]) {
-        if (_changeCount != self.pasteboard.changeCount) {
-            _changeCount = self.pasteboard.changeCount;
-            [self pasteboardContentChanged];
-        }
         usleep(kPollInterval);
+        BOOL countEquals = _changeCount == self.pasteboard.changeCount;
+        if (countEquals) {
+            continue;
+        }
+        _changeCount = self.pasteboard.changeCount;
+
+        [self pasteboardContentChanged];
     }
 }
 
@@ -92,9 +109,11 @@ NS_ENUM(unsigned char, PPPasteboardObserverState)
 
 - (void)pasteboardContentChanged
 {
+    [self pauseObserving];
     for (id<PPPasteboardObserverSubscriber> subscriber in _subscribers) {
         [subscriber pasteboardChanged:self.pasteboard];
     }
+    [self continueObserving];
 }
 
 #pragma mark - Subscribers

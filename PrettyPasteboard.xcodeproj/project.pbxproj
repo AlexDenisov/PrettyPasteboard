@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		461B69B2193B932C00FECA0D /* PPPasteboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */; };
 		461B69B6193BA63A00FECA0D /* PPPasteboardJSONHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */; };
+		461B69B8193BA84B00FECA0D /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461B69B7193BA84B00FECA0D /* SBJson.framework */; };
 		46B673AD193A0770009D136E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B673AC193A0770009D136E /* Cocoa.framework */; };
 		46B673B7193A0770009D136E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B673B5193A0770009D136E /* InfoPlist.strings */; };
 		46B673B9193A0770009D136E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B673B8193A0770009D136E /* main.m */; };
@@ -24,6 +25,8 @@
 		461B69B3193BA50900FECA0D /* PPPasteboardObserverSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPasteboardObserverSubscriber.h; sourceTree = "<group>"; };
 		461B69B4193BA63A00FECA0D /* PPPasteboardJSONHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasteboardJSONHandler.h; sourceTree = "<group>"; };
 		461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasteboardJSONHandler.m; sourceTree = "<group>"; };
+		461B69B7193BA84B00FECA0D /* SBJson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SBJson.framework; sourceTree = "<group>"; };
+		461B69B9193BA8CE00FECA0D /* PPPasteboardJSONHandler_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPasteboardJSONHandler_Private.h; sourceTree = "<group>"; };
 		46B673A9193A0770009D136E /* PrettyPasteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPasteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B673AC193A0770009D136E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		46B673AF193A0770009D136E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -47,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B673AD193A0770009D136E /* Cocoa.framework in Frameworks */,
+				461B69B8193BA84B00FECA0D /* SBJson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,11 +77,12 @@
 		46B673AB193A0770009D136E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				461B69B7193BA84B00FECA0D /* SBJson.framework */,
 				46B673AC193A0770009D136E /* Cocoa.framework */,
 				46B673CB193A0770009D136E /* XCTest.framework */,
 				46B673AE193A0770009D136E /* Other Frameworks */,
 			);
-			name = Frameworks;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		46B673AE193A0770009D136E /* Other Frameworks */ = {
@@ -101,6 +106,7 @@
 				461B69B3193BA50900FECA0D /* PPPasteboardObserverSubscriber.h */,
 				461B69B0193B932C00FECA0D /* PPPasteboardObserver.h */,
 				461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */,
+				461B69B9193BA8CE00FECA0D /* PPPasteboardJSONHandler_Private.h */,
 				461B69B4193BA63A00FECA0D /* PPPasteboardJSONHandler.h */,
 				461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */,
 			);
@@ -298,6 +304,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrettyPasteboard/PrettyPasteboard-Prefix.pch";
 				INFOPLIST_FILE = "PrettyPasteboard/PrettyPasteboard-Info.plist";
@@ -311,6 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrettyPasteboard/PrettyPasteboard-Prefix.pch";
 				INFOPLIST_FILE = "PrettyPasteboard/PrettyPasteboard-Info.plist";
