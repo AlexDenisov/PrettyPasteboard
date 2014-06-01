@@ -32,6 +32,7 @@
     NSMenuItem *enableItem = [menu addItemWithTitle:@"Enabled" action:@selector(changeState:) keyEquivalent:@""];
     [enableItem setState:1];
     [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItemWithTitle:@"About" action:@selector(orderFrontStandardAboutPanel:) keyEquivalent:@""];
     [menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""];
     self.statusBarIcon.menu = menu;
 }
