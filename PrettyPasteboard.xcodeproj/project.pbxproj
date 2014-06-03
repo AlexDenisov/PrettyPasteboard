@@ -7,26 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		461B69B2193B932C00FECA0D /* PPPasteboardObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */; };
-		461B69B6193BA63A00FECA0D /* PPPasteboardJSONHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */; };
-		461B69B8193BA84B00FECA0D /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461B69B7193BA84B00FECA0D /* SBJson.framework */; };
+		4605C75F193DED2200AF2A4C /* PPAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4605C75E193DED2200AF2A4C /* PPAppDelegate.swift */; };
+		4660AFA1193E158900A0CA73 /* PPPasteboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660AFA0193E158900A0CA73 /* PPPasteboardObserver.swift */; };
+		4660AFA3193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660AFA2193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift */; };
+		4660AFA5193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660AFA4193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift */; };
 		46B673AD193A0770009D136E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B673AC193A0770009D136E /* Cocoa.framework */; };
 		46B673B7193A0770009D136E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B673B5193A0770009D136E /* InfoPlist.strings */; };
 		46B673B9193A0770009D136E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B673B8193A0770009D136E /* main.m */; };
 		46B673BD193A0770009D136E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 46B673BB193A0770009D136E /* Credits.rtf */; };
-		46B673C0193A0770009D136E /* PPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B673BF193A0770009D136E /* PPAppDelegate.m */; };
 		46B673C3193A0770009D136E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B673C1193A0770009D136E /* MainMenu.xib */; };
 		46B673C5193A0770009D136E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B673C4193A0770009D136E /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		461B69B0193B932C00FECA0D /* PPPasteboardObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasteboardObserver.h; sourceTree = "<group>"; };
-		461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasteboardObserver.m; sourceTree = "<group>"; };
-		461B69B3193BA50900FECA0D /* PPPasteboardObserverSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPasteboardObserverSubscriber.h; sourceTree = "<group>"; };
-		461B69B4193BA63A00FECA0D /* PPPasteboardJSONHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPasteboardJSONHandler.h; sourceTree = "<group>"; };
-		461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPasteboardJSONHandler.m; sourceTree = "<group>"; };
-		461B69B7193BA84B00FECA0D /* SBJson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SBJson.framework; sourceTree = "<group>"; };
-		461B69B9193BA8CE00FECA0D /* PPPasteboardJSONHandler_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPasteboardJSONHandler_Private.h; sourceTree = "<group>"; };
+		4605C75E193DED2200AF2A4C /* PPAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPAppDelegate.swift; sourceTree = "<group>"; };
+		4660AFA0193E158900A0CA73 /* PPPasteboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPasteboardObserver.swift; sourceTree = "<group>"; };
+		4660AFA2193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPasteboardObserverSubscriber.swift; sourceTree = "<group>"; };
+		4660AFA4193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPasteboardJSONHandler.swift; sourceTree = "<group>"; };
 		46B673A9193A0770009D136E /* PrettyPasteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPasteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B673AC193A0770009D136E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		46B673AF193A0770009D136E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -37,8 +34,6 @@
 		46B673B8193A0770009D136E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46B673BA193A0770009D136E /* PrettyPasteboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrettyPasteboard-Prefix.pch"; sourceTree = "<group>"; };
 		46B673BC193A0770009D136E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		46B673BE193A0770009D136E /* PPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPAppDelegate.h; sourceTree = "<group>"; };
-		46B673BF193A0770009D136E /* PPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAppDelegate.m; sourceTree = "<group>"; };
 		46B673C2193A0770009D136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		46B673C4193A0770009D136E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46B673CB193A0770009D136E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -50,7 +45,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B673AD193A0770009D136E /* Cocoa.framework in Frameworks */,
-				461B69B8193BA84B00FECA0D /* SBJson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +71,6 @@
 		46B673AB193A0770009D136E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				461B69B7193BA84B00FECA0D /* SBJson.framework */,
 				46B673AC193A0770009D136E /* Cocoa.framework */,
 				46B673CB193A0770009D136E /* XCTest.framework */,
 				46B673AE193A0770009D136E /* Other Frameworks */,
@@ -98,17 +91,13 @@
 		46B673B2193A0770009D136E /* PrettyPasteboard */ = {
 			isa = PBXGroup;
 			children = (
-				46B673BE193A0770009D136E /* PPAppDelegate.h */,
-				46B673BF193A0770009D136E /* PPAppDelegate.m */,
+				4605C75E193DED2200AF2A4C /* PPAppDelegate.swift */,
+				4660AFA2193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift */,
+				4660AFA0193E158900A0CA73 /* PPPasteboardObserver.swift */,
+				4660AFA4193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift */,
 				46B673C1193A0770009D136E /* MainMenu.xib */,
 				46B673C4193A0770009D136E /* Images.xcassets */,
 				46B673B3193A0770009D136E /* Supporting Files */,
-				461B69B3193BA50900FECA0D /* PPPasteboardObserverSubscriber.h */,
-				461B69B0193B932C00FECA0D /* PPPasteboardObserver.h */,
-				461B69B1193B932C00FECA0D /* PPPasteboardObserver.m */,
-				461B69B9193BA8CE00FECA0D /* PPPasteboardJSONHandler_Private.h */,
-				461B69B4193BA63A00FECA0D /* PPPasteboardJSONHandler.h */,
-				461B69B5193BA63A00FECA0D /* PPPasteboardJSONHandler.m */,
 			);
 			path = PrettyPasteboard;
 			sourceTree = "<group>";
@@ -192,10 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B673C0193A0770009D136E /* PPAppDelegate.m in Sources */,
-				461B69B6193BA63A00FECA0D /* PPPasteboardJSONHandler.m in Sources */,
-				461B69B2193B932C00FECA0D /* PPPasteboardObserver.m in Sources */,
+				4605C75F193DED2200AF2A4C /* PPAppDelegate.swift in Sources */,
 				46B673B9193A0770009D136E /* main.m in Sources */,
+				4660AFA5193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift in Sources */,
+				4660AFA3193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift in Sources */,
+				4660AFA1193E158900A0CA73 /* PPPasteboardObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,7 +302,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrettyPasteboard/PrettyPasteboard-Prefix.pch";
 				INFOPLIST_FILE = "PrettyPasteboard/PrettyPasteboard-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -320,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,7 +323,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PrettyPasteboard/PrettyPasteboard-Prefix.pch";
 				INFOPLIST_FILE = "PrettyPasteboard/PrettyPasteboard-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
