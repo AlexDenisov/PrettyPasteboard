@@ -10,9 +10,9 @@ import Foundation
 import Cocoa
 
 enum PPPasteboardObserverState {
-    case PPPasteboardObserverStateDisabled
-    case PPPasteboardObserverStateEnabled
-    case PPPasteboardObserverStatePaused
+    case Disabled
+    case Enabled
+    case Paused
 }
 
 class PPPasteboardObserver : NSObject {
@@ -21,7 +21,7 @@ class PPPasteboardObserver : NSObject {
     var subscribers : NSMutableSet = NSMutableSet()
     var serialQueue : dispatch_queue_t = dispatch_queue_create("org.okolodev.PrettyPasteboard", nulDev)
     var changeCount : Int = -1
-    var state : PPPasteboardObserverState = PPPasteboardObserverState.PPPasteboardObserverStateDisabled
+    var state : PPPasteboardObserverState = PPPasteboardObserverState.Disabled
     
     init() {
         
@@ -36,23 +36,23 @@ class PPPasteboardObserver : NSObject {
     
     func startObserving() {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
-            self.changeState(PPPasteboardObserverState.PPPasteboardObserverStateEnabled)
+            self.changeState(PPPasteboardObserverState.Enabled)
             self.observerLoop()
         });
     }
     
     func stopObserving() {
-        self.changeState(PPPasteboardObserverState.PPPasteboardObserverStateDisabled)
+        self.changeState(PPPasteboardObserverState.Disabled)
     }
 
     func pauseObserving() {
-        self.changeState(PPPasteboardObserverState.PPPasteboardObserverStatePaused)
+        self.changeState(PPPasteboardObserverState.Paused)
     }
     
     func continueObserving() {
-        if (self.state == PPPasteboardObserverState.PPPasteboardObserverStatePaused) {
+        if (self.state == PPPasteboardObserverState.Paused) {
             self.changeCount = self.pasteboard.changeCount;
-            self.state = PPPasteboardObserverState.PPPasteboardObserverStateEnabled
+            self.state = PPPasteboardObserverState.Enabled
         }
     }
     
@@ -86,7 +86,7 @@ class PPPasteboardObserver : NSObject {
     }
     
     func isEnabled() -> Bool {
-        return self.state == PPPasteboardObserverState.PPPasteboardObserverStateEnabled;
+        return self.state == PPPasteboardObserverState.Enabled;
     }
     
     // Subscribers
