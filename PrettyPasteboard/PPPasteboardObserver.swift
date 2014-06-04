@@ -71,9 +71,11 @@ class PPPasteboardObserver : NSObject {
     
     func pasteboardContentChanged() {
         self.pauseObserving()
-//        for anySubscriber : protocol<PPPasteboardObserverSubscriber> in self.subscribers {
-//            anySubscriber.pasteboardChanged(self.pasteboard)
-//        }
+        for anySubscriber : AnyObject in self.subscribers {
+            if let subscriber = anySubscriber as? protocol<PPPasteboardObserverSubscriber> {
+                subscriber.pasteboardChanged(self.pasteboard)
+            }
+        }
         self.continueObserving()
     }
     

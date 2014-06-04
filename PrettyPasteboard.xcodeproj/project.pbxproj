@@ -11,9 +11,9 @@
 		4660AFA1193E158900A0CA73 /* PPPasteboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660AFA0193E158900A0CA73 /* PPPasteboardObserver.swift */; };
 		4660AFA3193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660AFA2193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift */; };
 		4660AFA5193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660AFA4193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift */; };
+		4660AFA8193EF91900A0CA73 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660AFA7193EF91900A0CA73 /* main.swift */; };
 		46B673AD193A0770009D136E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B673AC193A0770009D136E /* Cocoa.framework */; };
 		46B673B7193A0770009D136E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46B673B5193A0770009D136E /* InfoPlist.strings */; };
-		46B673B9193A0770009D136E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B673B8193A0770009D136E /* main.m */; };
 		46B673BD193A0770009D136E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 46B673BB193A0770009D136E /* Credits.rtf */; };
 		46B673C3193A0770009D136E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B673C1193A0770009D136E /* MainMenu.xib */; };
 		46B673C5193A0770009D136E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B673C4193A0770009D136E /* Images.xcassets */; };
@@ -24,6 +24,7 @@
 		4660AFA0193E158900A0CA73 /* PPPasteboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPasteboardObserver.swift; sourceTree = "<group>"; };
 		4660AFA2193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPasteboardObserverSubscriber.swift; sourceTree = "<group>"; };
 		4660AFA4193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPPasteboardJSONHandler.swift; sourceTree = "<group>"; };
+		4660AFA7193EF91900A0CA73 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		46B673A9193A0770009D136E /* PrettyPasteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrettyPasteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B673AC193A0770009D136E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		46B673AF193A0770009D136E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -31,8 +32,6 @@
 		46B673B1193A0770009D136E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		46B673B4193A0770009D136E /* PrettyPasteboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrettyPasteboard-Info.plist"; sourceTree = "<group>"; };
 		46B673B6193A0770009D136E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		46B673B8193A0770009D136E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		46B673BA193A0770009D136E /* PrettyPasteboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrettyPasteboard-Prefix.pch"; sourceTree = "<group>"; };
 		46B673BC193A0770009D136E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		46B673C2193A0770009D136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		46B673C4193A0770009D136E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 				4660AFA2193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift */,
 				4660AFA0193E158900A0CA73 /* PPPasteboardObserver.swift */,
 				4660AFA4193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift */,
+				4660AFA7193EF91900A0CA73 /* main.swift */,
 				46B673C1193A0770009D136E /* MainMenu.xib */,
 				46B673C4193A0770009D136E /* Images.xcassets */,
 				46B673B3193A0770009D136E /* Supporting Files */,
@@ -107,8 +107,6 @@
 			children = (
 				46B673B4193A0770009D136E /* PrettyPasteboard-Info.plist */,
 				46B673B5193A0770009D136E /* InfoPlist.strings */,
-				46B673B8193A0770009D136E /* main.m */,
-				46B673BA193A0770009D136E /* PrettyPasteboard-Prefix.pch */,
 				46B673BB193A0770009D136E /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -182,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4605C75F193DED2200AF2A4C /* PPAppDelegate.swift in Sources */,
-				46B673B9193A0770009D136E /* main.m in Sources */,
+				4660AFA8193EF91900A0CA73 /* main.swift in Sources */,
 				4660AFA5193E1E5800A0CA73 /* PPPasteboardJSONHandler.swift in Sources */,
 				4660AFA3193E1E0600A0CA73 /* PPPasteboardObserverSubscriber.swift in Sources */,
 				4660AFA1193E158900A0CA73 /* PPPasteboardObserver.swift in Sources */,

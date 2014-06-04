@@ -17,7 +17,14 @@ class PPPasteboardJSONHandler : NSObject, PPPasteboardObserverSubscriber {
     
     func pasteboardChanged(pasteboard: NSPasteboard) {
         var pasteboardContent = pasteboard.dataForType(NSPasteboardTypeString)
-        var json : AnyObject = NSJSONSerialization.JSONObjectWithData(pasteboardContent, options: NSJSONReadingOptions.MutableContainers, error: nil)
+        
+        var error : NSError?
+        var json : AnyObject! = NSJSONSerialization.JSONObjectWithData(pasteboardContent, options: NSJSONReadingOptions.AllowFragments, error: &error)
+        
+        if let error = error {
+            return
+        }
+        
         var newjson = NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted, error: nil)
         pasteboard.declareTypes([NSPasteboardTypeString], owner: nil)
         pasteboard.setData(newjson, forType: NSPasteboardTypeString)
